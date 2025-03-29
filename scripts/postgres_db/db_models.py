@@ -4,10 +4,10 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from geoalchemy2 import Geometry
 
-DB_NAME = "Testing"
-DB_USER = "Test"
-DB_PASSWORD = "test12345"
-DB_HOST = "192.168.0.205"
+DB_NAME = "spatial_db"
+DB_USER = "username"
+DB_PASSWORD = "password"
+DB_HOST = "localhost"
 
 def ensure_postgis():
     conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST)
