@@ -7,9 +7,9 @@ This is a **FastAPI-based backend** for storing, updating, and retrieving spatia
 
 ## Features
 
-✅ Add, retrieve, and update **points** (latitude, longitude)  
-✅ Add, retrieve, and update **polygons** (multiple coordinates)  
-✅ Find points inside a specific polygon
+-->Add, retrieve, and update **points** (latitude, longitude)  
+-->Add, retrieve, and update **polygons** (multiple coordinates)  
+-->Find points inside a specific polygon
 
 ---
 
@@ -185,7 +185,7 @@ Server runs at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
-### 🛠️ Update Polygon(s)
+### Update Polygon(s)
 **POST** `/update_polygons`
 
 **Input:**
