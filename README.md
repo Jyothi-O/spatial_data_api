@@ -1,11 +1,11 @@
 
-# 📌 Spatial Data API - README
+# Spatial Data API - README
 
 This is a **FastAPI-based backend** for storing, updating, and retrieving spatial data (**points** and **polygons**) using **PostgreSQL + PostGIS**.
 
 ---
 
-## 🚀 Features
+## Features
 
 ✅ Add, retrieve, and update **points** (latitude, longitude)  
 ✅ Add, retrieve, and update **polygons** (multiple coordinates)  
@@ -13,7 +13,7 @@ This is a **FastAPI-based backend** for storing, updating, and retrieving spatia
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python (FastAPI)**
 - **PostgreSQL with PostGIS**
@@ -22,7 +22,7 @@ This is a **FastAPI-based backend** for storing, updating, and retrieving spatia
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 spatial_data_api/
@@ -42,20 +42,20 @@ spatial_data_api/
 
 ---
 
-## 🛠️ Setup & Installation
+## Setup & Installation
 
-### 1️⃣ Clone the Repository
+### 1.Clone the Repository
 ```bash
 git clone https://github.com/Jyothi-O/spatial_data_api.git
 cd spatial_data_api
 ```
 
-### 2️⃣ Install Dependencies
+### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Configure Database
+### 3. Configure Database
 
 Ensure **PostgreSQL** and **PostGIS** are installed and enabled.
 
@@ -68,7 +68,7 @@ Update the following values in `conf/application.conf`:
 
 ---
 
-## 🚀 Running the API
+## Running the API
 
 ```bash
 python main.py
@@ -78,7 +78,7 @@ Server runs at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
-## 📌 API Endpoints
+## API Endpoints
 
 | Method | Endpoint                          | Description                       |
 |--------|-----------------------------------|-----------------------------------|
@@ -92,9 +92,9 @@ Server runs at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
-## 📄 Example Requests
+## Example Requests
 
-### 📍 Add Point(s)
+### Add Point(s)
 **POST** `/add_points`
 
 **Input:**
@@ -124,7 +124,7 @@ Server runs at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
-### ✏️ Update Point(s)
+###  Update Point(s)
 **POST** `/update_points`
 
 **Input:**
@@ -155,7 +155,7 @@ Server runs at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
-### 🔺 Add Polygon(s)
+### Add Polygon(s)
 **POST** `/add_polygons`
 
 **Input:**
@@ -216,17 +216,17 @@ Server runs at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
-### 📍 Get All Points
+### Get All Points
 **GET** `/get_points`
 
 ---
 
-### 🔷 Get All Polygons
+### Get All Polygons
 **GET** `/get_polygons`
 
 ---
 
-### 🔍 Find Points in a Polygon
+### Find Points in a Polygon
 **GET** `/find_points_in_polygon?polygon_name=Polygon X`
 
 **Output:**
@@ -244,7 +244,7 @@ Server runs at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
-## 📌 Notes
+## Notes
 
 - Ensure **PostGIS extension** is enabled in PostgreSQL:
   ```sql
